@@ -146,7 +146,7 @@ class Lexer{
                 let op = this.extractOperator();
                 return new Token(op,op)
             }
-            console.log('Invalid token -> '+this.currentChar);
+            
         }
         return new Token(EOF,null);
     }
