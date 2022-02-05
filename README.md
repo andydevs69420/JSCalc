@@ -2,7 +2,7 @@
 A simple calculator, made using html,css,sass and javascript. It uses 
 LL1 recursive descent parsing method to parse the input.
 
-*************************** Note!! ***************************
+**************************** Note!! ****************************
 <br>
 It may contain some bug(s), but I'm sure you can fix it easily.
 
