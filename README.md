@@ -1,8 +1,6 @@
 # JSCalc
-A simple calculator, made using html,css,sass and javascript.
-# Description:
-<br>
-
+A simple calculator, made using html,css,sass and javascript. It uses 
+LL1 recursive descent parsing method to parse the input.
 
 *************************** Note!! ***************************
 <br>
