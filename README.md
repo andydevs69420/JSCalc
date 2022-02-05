@@ -1,5 +1,8 @@
 # JSCalc
 A simple calculator, made using html,css,sass and javascript.
+# Description:
+<br>
+
 
 *** Note!! *** 
 <br>
