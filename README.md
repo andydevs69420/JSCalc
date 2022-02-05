@@ -1,7 +1,7 @@
 # JSCalc
 Simple calculator made using html,css,sass and javascript!!
 
-<h2>Note</h2>
+<h1>Note</h1>
 It may contain some bug(s), but I'm sure you can fix it easily.
 
 # Timelapse video
