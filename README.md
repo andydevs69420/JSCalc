@@ -4,7 +4,7 @@ A simple calculator, made using html,css,sass and javascript.
 <br>
 
 
-*** Note!! *** 
+*************************** Note!! ***************************
 <br>
 It may contain some bug(s), but I'm sure you can fix it easily.
 
@@ -14,3 +14,4 @@ It may contain some bug(s), but I'm sure you can fix it easily.
 ##### Working page
 - WEBPAGE LINK: https://andydevs69420.github.io/calculatorparser/
 
+:smile:
