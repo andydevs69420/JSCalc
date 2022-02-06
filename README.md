@@ -10,6 +10,6 @@ It may contain some bug(s), but I'm sure you can fix it easily.
 - https://youtu.be/pKTkqA_04W8
 
 ##### Working page
-- https://andydevs69420.github.io/calculatorparser/
+- https://andydevs69420.github.io/JSCalc/
 
 :smile:
