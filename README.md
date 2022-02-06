@@ -11,7 +11,7 @@ It uses LL1 recursive descent parsing method to parse the input.
 <br>
 It may contain some bug(s), but I'm sure you can fix it easily.
 
-**Timelapse video** <br>
+**:video: Timelapse video** <br>
 - LINK: https://youtu.be/pKTkqA_04W8
 
 **Working page** <br>
