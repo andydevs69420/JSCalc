@@ -18,4 +18,4 @@ It may contain some bug(s), but I'm sure you can fix it easily.
 - LINK: https://andydevs69420.github.io/JSCalc/
 
 
-# SCREENSHOTS
+# 📷 SCREENSHOTS
