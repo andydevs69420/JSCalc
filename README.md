@@ -2,7 +2,7 @@
   <h1>JSCalc</h1>
 </div>
 
-*Description* <br>
+**:fire: Description** <br>
 
 A simple calculator made using html,css,sass and javascript. <br>
 It uses LL1 recursive descent parsing method to parse the input.
