@@ -21,5 +21,5 @@ It may contain some bug(s), but I'm sure you can fix it easily.
 # 📷 SAMPLE SCREENSHOTS
 <div align="left">
   <img style="display:block;max-width:120px;max-height: 90px;" src="screenshots/screenshot_1.png" alt="screenshot-1" width="120px"/>
-  <img style="display:block;max-width:120px;max-height: 90px;" src="screenshots/screenshot_2.png" alt="screenshot-2" width="120px" heiht="90px"/>
+  <img style="display:block;max-width:120px;max-height: 90px;" src="screenshots/screenshot_2.png" alt="screenshot-2" width="120px" height="90px"/>
 </div>
