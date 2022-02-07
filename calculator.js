@@ -64,7 +64,7 @@ class Lexer{
     }
     forward(){
         this.position++;
-        if(this.position <= (this.code.length -1)){
+        if(this.position < (this.code.length -1)) {
             this.currentChar = this.code[this.position];
         }else{
             this.currentChar = null;
