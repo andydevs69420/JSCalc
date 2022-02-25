@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2022 
+ *   All rights reserved.
+ */
 
 
 /*
@@ -64,7 +68,7 @@ class Lexer{
     }
     forward(){
         this.position++;
-        if(this.position < (this.code.length -1)) {
+        if(this.position < this.code.length) {
             this.currentChar = this.code[this.position];
         }else{
             this.currentChar = null;
@@ -177,14 +181,22 @@ class Parser{
             let expr = this.expr();
             this.eat(RPAREN)
             return expr;
+        }else if(factor.type == PLUS){
+            this.eat(PLUS);
+            let num = this.factor()
+            return new UnaryNode(PLUS,num);
         }else if(factor.type == MINUS){
             this.eat(MINUS);
             let num = this.factor()
             return new UnaryNode(MINUS,num);
         }
+        return null;
     }
     term(){
         let node = this.factor();
+
+        if (node == undefined || node == null) return null;
+
         while(this.currentToken.type  == MUL || this.currentToken.type  == DIV || this.currentToken.type == MOD){
             let token = this.currentToken
             if(token.type == MUL){
@@ -201,6 +213,9 @@ class Parser{
     }
     expr(){
         let node = this.term();
+
+        if (node == undefined || node == null) return null;
+
         while(this.currentToken.type  == PLUS || this.currentToken.type == MINUS){
             let token = this.currentToken
             if(token.type == PLUS){
@@ -225,14 +240,15 @@ class Interpreter{
     }
 
     visit(node){
-        if(node instanceof Operator){
+        console.log(node);
+        if(node.constructor.name === "Operator"){
             return this._OperatorNode(node);
-        }else if(node instanceof NumberNode){
+        }else if(node.constructor.name === "NumberNode"){
             return this._NumberNode(node);
-        }else if(node instanceof UnaryNode){
+        }else if(node.constructor.name === "UnaryNode"){
             return this._UnaryNode(node);
         }else{
-            alert('Invalid token')
+            alert('Invalid token');
         }
     }
     _OperatorNode(node){
@@ -257,7 +273,7 @@ class Interpreter{
     }
     _UnaryNode(node){
         let x = this.visit(node.number)
-        return (node.operator == MINUS)?x*-1: x;
+        return (node.operator == MINUS)?-x: +x;
     }
     interpret(){
         return this.visit(this.parser.parse())
